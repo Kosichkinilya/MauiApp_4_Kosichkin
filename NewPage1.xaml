@@ -8,11 +8,25 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Button
-            Text="Решить">
-            
-        </Button>
+        <StackLayout>
+            <RadioButton x:Name="History"                         GroupName="subject" Content="Культурология"    IsChecked="True" />
+            <RadioButton x:Name="Cultural_Studies"                GroupName="subject" Content="Культурология"    IsChecked="True" />
+            <RadioButton x:Name="Philosophy"                      GroupName="subject" Content="Философия"        IsChecked="True" />
+            <RadioButton x:Name="Foreign_languagery"              GroupName="subject" Content="Иностранный язык" IsChecked="True" />
+
+        </StackLayout>
+
+
+        <StackLayout>
+            <Button
+                Text="Решить" 
+                Clicked="Button_Clicked">
+            </Button>
+
+            <Entry x:Name="Entry" IsReadOnly="True"/>
+        </StackLayout>
+
         
-        
+       
     </VerticalStackLayout>
 </ContentPage>

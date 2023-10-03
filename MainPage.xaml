@@ -5,9 +5,27 @@
 
     <StackLayout>
         <Label 
-            Text=" автоматический расчет, т.е. выбрали радиокнопку и сразу увидели ответ. "
+            Text="Автоматический расчет, т.е. выбрали радиокнопку и сразу увидели ответ. "
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+
+        <StackLayout>
+
+            <RadioButton x:Name="History"            CheckedChanged="History_CheckedChanged"             GroupName="subject" Content="История"          IsChecked="True" />
+            <RadioButton x:Name="Cultural_Studies"   CheckedChanged="Cultural_Studies_CheckedChanged"    GroupName="subject" Content="Культурология"    IsChecked="True" />
+            <RadioButton x:Name="Philosophy"         CheckedChanged="Philosophy_CheckedChanged"          GroupName="subject" Content="Философия"        IsChecked="True" />
+            <RadioButton x:Name="Foreign_languagery" CheckedChanged="Foreign_languagery_CheckedChanged"  GroupName="subject" Content="Иностранный язык" IsChecked="True" />
+              
+        </StackLayout>
+        <Entry x:Name="Entry" IsReadOnly="True"/>
+
     </StackLayout>
 
+
+
+   
+        
+
+   
 </ContentPage>
